@@ -1,0 +1,92 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    max-width: 100dvw;
+    min-height: 100dvh;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    background: linear-gradient(to top, rgb(0, 0, 26), rgb(0, 0, 68) 30%, rgb(112, 13, 121));
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+.header{
+    display: flex;
+	width: 100dvw;
+	justify-content: space-around;
+	align-items: center;
+	position: sticky;
+	top: 0;
+	z-index: 2;
+
+    background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,0));
+}
+
+.menu{
+    width: 60%;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.menu a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font: 12pt helvetica;
+
+    transition: .3s;
+}
+
+#logo{
+    display: flex;
+    align-items: center;
+    width: 40%;
+    padding: 30px;
+    position: relative;
+    left: 20px;
+}
+
+.header img{
+	height: 30px;
+    width: auto;
+}
+
+.menu a:hover{
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.box{
+    display: flex;
+    gap: 20px;
+}
+
+.fotos{
+    width: 150px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    overflow: hidden;
+
+    transition: .3s;
+}
+
+.fotos:hover{
+    cursor: pointer;
+    width: 300px;
+    border-radius: 20px;
+}
+
+.fotos img{
+    width: 100%;
+}
